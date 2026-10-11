@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff4f8">
+<title>آشپزخانه گیسو | آموزش شیرینی‌پزی و آشپزی</title>
+<meta name="description" content="آموزش شیرینی‌پزی، کیک‌پزی و آشپزی با آشپزخانه گیسو. دوره‌های آموزشی و آموزش‌های رایگان را ببینید.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+:root{--pink:#e77da6;--pink-dark:#c94f82;--pink-light:#fff0f6;--cream:#fffaf8;--ink:#382832;--muted:#796b74;--line:#f2dce6;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;line-height:1.9}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#fffaf8ee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem}.logo{width:44px;height:44px;border-radius:15px;background:linear-gradient(145deg,#ffdce9,#e77da6);display:grid;place-items:center;font-size:23px;box-shadow:0 7px 18px #e77da633}.links{display:flex;gap:22px;color:var(--muted);font-size:.92rem}.links a:hover{color:var(--pink-dark)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 20px;border-radius:14px;background:var(--pink);color:#fff;font-weight:700;border:1px solid var(--pink);transition:.2s;cursor:pointer}.btn:hover{background:var(--pink-dark);transform:translateY(-1px)}.btn.secondary{background:#fff;color:var(--pink-dark);border-color:var(--line)}
+.hero{padding:70px 0 56px;overflow:hidden;background:radial-gradient(ellipse at 90% 5%,#ffe0eb 0,transparent 36%),radial-gradient(ellipse at 5% 85%,#ffebf2 0,transparent 30%),var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:42px}.eyebrow{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:99px;padding:5px 13px;color:var(--pink-dark);font-size:.85rem;font-weight:700}.hero h1{font-size:clamp(2rem,4vw,3.4rem);line-height:1.45;margin:16px 0}.hero h1 span{color:var(--pink-dark)}.hero p{color:var(--muted);max-width:590px;margin:0 0 24px}.actions{display:flex;gap:12px;flex-wrap:wrap}.hero-art{min-height:340px;border-radius:35px;background:linear-gradient(145deg,#ffe5ef,#fff 65%);border:1px solid #f4d5e2;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.hero-art:before,.hero-art:after{content:"";position:absolute;border-radius:50%;background:#f6b8d0;opacity:.35}.hero-art:before{width:220px;height:220px;top:-75px;left:-40px}.hero-art:after{width:150px;height:150px;bottom:-50px;right:-25px}.cake{position:relative;z-index:1;text-align:center}.cake .emoji{font-size:clamp(100px,15vw,170px);filter:drop-shadow(0 18px 12px #c94f8220)}.cake p{margin:0;color:var(--pink-dark);font-weight:800;font-size:1.1rem}
+section{padding:58px 0}.section-head{text-align:center;margin-bottom:28px}.section-head .tag{color:var(--pink-dark);font-weight:700;font-size:.9rem}.section-head h2{margin:4px 0;font-size:clamp(1.55rem,3vw,2.2rem)}.section-head p{color:var(--muted);margin:0}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.category{padding:24px 15px;background:#fff;border:1px solid var(--line);border-radius:22px;text-align:center;box-shadow:0 8px 25px #7c36550a}.category .icon{font-size:35px}.category h3{margin:8px 0 2px;font-size:1.02rem}.category p{margin:0;color:var(--muted);font-size:.86rem}
+.courses{background:#fff5f9}.course-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.course{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 10px 28px #7c36550a;display:flex;flex-direction:column}.course-art{min-height:150px;display:grid;place-items:center;background:linear-gradient(135deg,#ffe2ed,#fff5f8);font-size:64px}.course-body{padding:18px;display:flex;flex-direction:column;flex:1}.pill{align-self:flex-start;font-size:.75rem;color:var(--pink-dark);background:var(--pink-light);padding:3px 10px;border-radius:99px;font-weight:700}.course h3{margin:10px 0 5px;font-size:1.1rem}.course p{color:var(--muted);font-size:.9rem;margin:0 0 16px}.course .btn{margin-top:auto;width:100%;font-size:.92rem;padding:9px 14px}.free-banner{margin-top:24px;background:linear-gradient(110deg,#f7b5ce,#ffe6ef);border-radius:25px;padding:25px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}.free-banner h3{margin:0;font-size:1.25rem}.free-banner p{margin:3px 0 0;color:#704457}.free-banner .btn{background:#fff;color:var(--pink-dark);border-color:#fff;white-space:nowrap}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;gap:32px}.about-stamp{background:var(--pink-light);border:1px solid var(--line);border-radius:30px;min-height:250px;display:grid;place-items:center;text-align:center;font-size:80px}.about-stamp span{display:block;font-size:1rem;font-weight:800;color:var(--pink-dark)}.about h2{font-size:1.8rem;margin:0 0 10px}.about p{color:var(--muted)}.features{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.features span{background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 12px;font-size:.85rem}
+.cta{padding:42px 0 65px}.cta-box{background:#fff;border:1px solid var(--line);border-radius:28px;text-align:center;padding:35px 20px;background-image:radial-gradient(ellipse at 10% 0,#ffe5ef,transparent 40%)}.cta-box h2{margin:0 0 8px}.cta-box p{color:var(--muted);margin:0 0 20px}
+footer{background:#fff;border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.88rem}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:800px){.links{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding-top:42px}.hero-art{min-height:250px}.categories{grid-template-columns:repeat(2,1fr)}.course-grid{grid-template-columns:1fr 1fr}.free-banner{align-items:flex-start;flex-direction:column}.about-stamp{min-height:190px}}
+@media(max-width:520px){.course-grid{grid-template-columns:1fr}.nav{min-height:66px}.nav>.btn{padding:9px 12px;font-size:.82rem}.hero h1{font-size:2rem}.category{padding:18px 10px}section{padding:42px 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="logo">🧁</span><span>آشپزخانه گیسو</span></a>
+    <nav class="links"><a href="#courses">دوره‌ها</a><a href="#free">آموزش رایگان</a><a href="#about">درباره گیسو</a><a href="#contact">ارتباط با ما</a></nav>
+    <a class="btn" href="https://t.me/giso_coki" target="_blank" rel="noopener">ورود به تلگرام ↗</a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">با عشق بپز، با لذت یاد بگیر 🌷</span>
+        <h1>دنیای شیرین آموزش با <span>آشپزخانه گیسو</span></h1>
+        <p>از شیرینی‌های خوشمزه و کیک‌های کافه‌ای تا غذاهای خونگی؛ آموزش‌ها رو ببین، مهارتت رو بیشتر کن و با خیال راحت قدم‌به‌قدم یاد بگیر.</p>
+        <div class="actions"><a class="btn" href="#courses">دیدن دوره‌های آموزشی</a><a class="btn secondary" href="#free">آموزش‌های رایگان 🎁</a></div>
+      </div>
+      <div class="hero-art"><div class="cake"><div class="emoji">🎂</div><p>دستورهای خوشمزه، آموزش‌های کاربردی</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><span class="tag">از کجا شروع کنیم؟</span><h2>آموزش موردعلاقه‌ات رو انتخاب کن</h2><p>هر چیزی که دوست داری بپزی، از همین‌جا شروع می‌شه.</p></div>
+      <div class="categories">
+        <a class="category" href="#courses"><div class="icon">🍪</div><h3>شیرینی‌پزی</h3><p>شیرینی خشک، عید و کوکی</p></a>
+        <a class="category" href="#courses"><div class="icon">🎂</div><h3>کیک‌پزی</h3><p>کیک تولد و کیک‌های کافه‌ای</p></a>
+        <a class="category" href="#courses"><div class="icon">🍮</div><h3>دسر و حلوا</h3><p>دسرهای خوشمزه و مجلسی</p></a>
+        <a class="category" href="#courses"><div class="icon">🍲</div><h3>آشپزی</h3><p>غذاهای خونگی و انواع خورشت</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses" id="courses">
+    <div class="wrap">
+      <div class="section-head"><span class="tag">یادگیری با طعم شیرینی</span><h2>دوره‌های آموزشی</h2><p>دوره‌ات رو انتخاب کن و برای دیدن جزئیات و ثبت‌نام وارد تلگرام شو.</p></div>
+      <div class="course-grid">
+        <article class="course"><div class="course-art">🍪</div><div class="course-body"><span class="pill">شیرینی‌پزی</span><h3>دوره شیرینی‌های عید</h3><p>آموزش شیرینی‌های متنوع و خوشمزه برای پذیرایی و عید.</p><a class="btn" href="https://t.me/giso_coki" target="_blank" rel="noopener">اطلاعات و ثبت‌نام در تلگرام</a></div></article>
+        <article class="course"><div class="course-art">🎂</div><div class="course-body"><span class="pill">کیک‌پزی</span><h3>کیک‌های پرطرفدار کافه‌ای</h3><p>برای آشنایی با سرفصل‌ها و شرایط تهیه دوره پیام بده.</p><a class="btn" href="https://t.me/giso_coki" target="_blank" rel="noopener">اطلاعات و ثبت‌نام در تلگرام</a></div></article>
+        <article class="course"><div class="course-art">🍰</div><div class="course-body"><span class="pill">کیک‌پزی</span><h3>دوره کیک تولد</h3><p>آموزش کیک تولد و ایده‌هایی برای تزیین کیک‌های زیبا.</p><a class="btn" href="https://t.me/giso_coki" target="_blank" rel="noopener">اطلاعات و ثبت‌نام در تلگرام</a></div></article>
+        <article class="course"><div class="course-art">🥥</div><div class="course-body"><span class="pill">آموزش رایگان</span><h3>دوره رایگان کوکی و کلوچه</h3><p>برای دریافت اطلاعات و دسترسی به آموزش رایگان وارد تلگرام شو.</p><a class="btn" href="https://t.me/giso_coki" target="_blank" rel="noopener">دریافت آموزش رایگان</a></div></article>
+        <article class="course"><div class="course-art">🍮</div><div class="course-body"><span class="pill">آموزش رایگان</span><h3>آموزش رایگان انواع حلوا</h3><p>برای اطلاع از آموزش‌های رایگان حلوا و جزئیات آن‌ها همراه ما باش.</p><a class="btn" href="https://t.me/giso_coki" target="_blank" rel="noopener">دریافت آموزش رایگان</a></div></article>
+        <article class="course"><div class="course-art">🫙</div><div class="course-body"><span class="pill">دسر و کیک</span><h3>مینی‌دوره جارکیک</h3><p>برای دیدن جزئیات آموزش جارکیک و دریافت اطلاعات بیشتر وارد تلگرام شو.</p><a class="btn" href="https://t.me/giso_coki" target="_blank" rel="noopener">مشاهده دوره</a></div></article>
+      </div>
+      <div class="free-banner" id="free"><div><h3>🎁 آموزش رایگان هم داریم!</h3><p>برای دیدن آموزش‌های رایگان و هدیه‌های آموزشی به کانال تلگرام آشپزخانه گیسو سر بزن.</p></div><a class="btn" href="https://t.me/giso_coki" target="_blank" rel="noopener">رفتن به تلگرام ↗</a></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-stamp">🌷<span>با عشق از آشپزخانه گیسو</span></div>
+      <div><h2>آشپزی و شیرینی‌پزی، ساده‌تر از همیشه</h2><p>اینجا قراره با آموزش‌های مرحله‌به‌مرحله، ایده‌های خوشمزه و دوره‌های متنوع، تجربه شیرین‌تری از آشپزی و شیرینی‌پزی داشته باشی. دوره موردعلاقه‌ات رو انتخاب کن و برای دریافت توضیحات بیشتر از طریق تلگرام با ما همراه شو.</p><div class="features"><span>🌸 آموزش‌های متنوع</span><span>🎂 مناسب علاقه‌مندان به کیک</span><span>🎁 آموزش‌های رایگان</span><span>💌 ارتباط از طریق تلگرام</span></div></div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="wrap"><div class="cta-box"><h2>آماده‌ای یه چیز خوشمزه یاد بگیری؟ 💗</h2><p>برای اطلاع از دوره‌ها، قیمت‌ها و آموزش‌های رایگان، به تلگرام آشپزخانه گیسو سر بزن.</p><a class="btn" href="https://t.me/giso_coki" target="_blank" rel="noopener">ارتباط و ثبت‌نام در تلگرام ↗</a></div></div>
+  </section>
+</main>
+<footer><div class="wrap foot"><span>© آشپزخانه گیسو</span><span>آموزش شیرینی‌پزی و آشپزی با عشق 🌷</span><a href="https://instagram.com/giso_kitchen" target="_blank" rel="noopener">اینستاگرام: @giso_kitchen</a></div></footer>
+</body>
+</html>
